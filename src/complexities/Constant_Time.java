@@ -2,7 +2,7 @@ package complexities;
 
 public class Constant_Time 
 {
-    public static int getFirstElement(int[] array)
+    public static void getFirstElement(int[] array)
     {
         if(array == null || array.length == 0)
         {
@@ -10,7 +10,7 @@ public class Constant_Time
         }
         else
         {
-            return array[0];
+            System.out.println("The number at index 0 is " + array[0]);
         }
     }
 
