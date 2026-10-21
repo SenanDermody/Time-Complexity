@@ -2,10 +2,11 @@ package complexities;
 
 public class Linear_Time 
 {
-    int evenCount = 0;
-
-    public void returnEvenNumbers(int[] array)
+    public static void returnEvenNumbers(int[] array)
     {
+
+        int evenCount = 0;
+
         if(array == null || array.length == 0)
         {
             throw new IllegalArgumentException("Array cannot be empty");
@@ -31,7 +32,7 @@ public class Linear_Time
         }
     }
     
-    public void runDemo(int[] array)
+    public static void runDemo(int[] array)
     {
         returnEvenNumbers(array);
     }
