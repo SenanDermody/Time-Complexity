@@ -4,7 +4,7 @@ public class Linear_Time
 {
     int evenCount = 0;
 
-    public void returnEvenNumbers(int[] array)
+    public int returnEvenNumbers(int[] array)
     {
         if(array == null || array.length == 0)
         {
@@ -16,10 +16,12 @@ public class Linear_Time
             {
                 if(array[i] % 2 == 0)
                 {
-                    evenCount++;
+                    return evenCount++;
                 }
             }
         }
+
+        return 0;
     }
     
     public void runDemo(int[] array)
