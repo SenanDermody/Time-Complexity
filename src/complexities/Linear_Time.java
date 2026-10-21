@@ -4,7 +4,7 @@ public class Linear_Time
 {
     int evenCount = 0;
 
-    public int returnEvenNumbers(int[] array)
+    public void returnEvenNumbers(int[] array)
     {
         if(array == null || array.length == 0)
         {
@@ -16,12 +16,19 @@ public class Linear_Time
             {
                 if(array[i] % 2 == 0)
                 {
-                    return evenCount++;
+                    evenCount++;
                 }
             }
         }
 
-        return 0;
+        if(evenCount == 0)
+        {
+            System.out.println("No even numbers found in the array");
+        }
+        else
+        {
+            System.out.println(evenCount + " even numbers were found in the array");
+        }
     }
     
     public void runDemo(int[] array)
